@@ -1,24 +1,13 @@
 <template>
   <article class="post_container">
     <div class="post_head">
-      <div class="user_info">
-        <nuxt-link :to="`article/${post.slug}`">
-          <div class="user_img">
-            <img :src="post.author.image" :alt="post.author.username"/>
-          </div>
-        </nuxt-link>
-        <div class="user_text">
-          <nuxt-link :to="`article/${post.slug}`">
-            <h6 class="user_name">{{post.author.username}}</h6>
-          </nuxt-link>
-          <p class="user_date">{{post.createdAt}}</p>
-        </div>
-      </div>
-      <div class="favorite_button">
-        <button role="button">
-          <span>{{post.favoritesCount}}</span>
-        </button>
-      </div>
+      <UserProfile
+          :slug="post.slug"
+          :image="post.author.image"
+          :username="post.author.username"
+          :created-at="post.createdAt"
+      />
+<!--      <Button is-class="favorite_button" :title="post.favoritesCount" />-->
     </div>
     <div class="post_body">
       <nuxt-link :to="`article/${post.slug}`">
@@ -41,10 +30,12 @@
 
 <script>
 import Tag from "@/components/common/Tag.vue";
+import UserProfile from "@/components/common/UserProfile.vue";
+import Button from "@/components/common/Button.vue";
 
 export default {
   name: "Post",
-  components: {Tag},
+  components: {Button, UserProfile, Tag},
   props: {
     post: {
       type: Object

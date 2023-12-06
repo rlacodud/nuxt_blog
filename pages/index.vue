@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
     <Banner/>
     <div class="container main_container">
       <PostList/>
