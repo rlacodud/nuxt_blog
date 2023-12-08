@@ -6,20 +6,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Tag",
-  props: {
-    title: {
-      type: String,
-      default: ''
-    },
-    hasBg: {
-      type: Boolean,
-      default: false
-    }
+<script setup>
+defineProps({
+  title: String,
+  hasBg: {
+    type: Boolean,
+    default: false
   }
-}
+})
 </script>
 
 <style scoped>

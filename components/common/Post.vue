@@ -28,20 +28,13 @@
   </article>
 </template>
 
-<script>
-import Tag from "@/components/common/Tag.vue";
+<script setup>
 import UserProfile from "@/components/common/UserProfile.vue";
-import Button from "@/components/common/Button.vue";
+import Tag from "@/components/common/Tag.vue";
 
-export default {
-  name: "Post",
-  components: {Button, UserProfile, Tag},
-  props: {
-    post: {
-      type: Object
-    }
-  }
-}
+defineProps({
+  post: Object
+})
 </script>
 
 <style scoped>

@@ -6,18 +6,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "Button",
-  props: {
-    title: {
-      type: String
-    },
-    isClass: {
-      type: String
-    }
-  }
-}
+<script setup>
+defineProps({
+  title: String,
+  isClass: String
+})
 </script>
 
 <style scoped>

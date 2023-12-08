@@ -13,28 +13,15 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import UserProfile from "@/components/common/UserProfile.vue";
-import Button from "@/components/common/Button.vue";
 
-export default {
-  name: "AuthorProfile",
-  components: {Button, UserProfile},
-  props: {
-    slug: {
-      type: String
-    },
-    username: {
-      type: String
-    },
-    image: {
-      type: String
-    },
-    createdAt: {
-      type: String
-    }
-  }
-}
+defineProps({
+  slug: String,
+  username: String,
+  image: String,
+  createdAt: String
+})
 </script>
 
 <style scoped>

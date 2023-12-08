@@ -18,35 +18,20 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import AuthorProfile from "@/components/common/AuthorProfile.vue";
-import UserProfile from "@/components/common/UserProfile.vue";
 
-export default {
-  name: "Banner",
-  components: {UserProfile, AuthorProfile},
-  props: {
-    isProfile: {
-      type: Boolean,
-      default: false
-    },
-    title: {
-      type: String
-    },
-    slug: {
-      type: String
-    },
-    username: {
-      type: String
-    },
-    image: {
-      type: String
-    },
-    createdAt: {
-      type: String
-    }
-  }
-}
+defineProps({
+  isProfile: {
+    type: Boolean,
+    default: false
+  },
+  title: String,
+  slug: String,
+  username: String,
+  image: String,
+  createdAt: String
+})
 </script>
 
 <style scoped>

@@ -19,28 +19,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Header',
-  data() {
-    return {
-      navigationList: [
-        {
-          path: "/",
-          name: "Home",
-        },
-        {
-          path: "/sign-in",
-          name: "Sign in",
-        },
-        {
-          path: "/sign-up",
-          name: "Sign up",
-        }
-      ]
-    }
+<script setup>
+import {ref} from "vue";
+
+const navigationList = ref([
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/sign-in",
+    name: "Sign in",
+  },
+  {
+    path: "/sign-up",
+    name: "Sign up",
   }
-}
+])
 </script>
 
 <style scoped>

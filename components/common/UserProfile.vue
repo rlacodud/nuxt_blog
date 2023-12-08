@@ -14,24 +14,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "UserProfile",
-  props: {
-    slug: {
-      type: String
-    },
-    username: {
-      type: String
-    },
-    image: {
-      type: String
-    },
-    createdAt: {
-      type: String
-    }
-  }
-}
+<script setup>
+defineProps({
+  slug: String,
+  username: String,
+  image: String,
+  createdAt: String
+})
 </script>
 
 <style scoped>
