@@ -163,3 +163,8 @@
     font-weight: 300;
 }
 .banner_container {margin-bottom: 2rem;}
+
+/* tab */
+.tab_item {color: #aaa; padding: 0.5rem 1rem; display: none;}
+.tab_item.is_show {display: block;}
+.tab_item.is_active {background-color: var(--c-white); border-bottom: 2px solid var(--c-primary); color: var(--c-primary);}
