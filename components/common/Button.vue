@@ -8,7 +8,7 @@
 
 <script setup>
 defineProps({
-  title: String,
+  title: [String, Number],
   isClass: String,
   size: String
 })
