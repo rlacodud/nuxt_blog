@@ -26,9 +26,9 @@
             :created-at="createdAt"
           />
           <p>
-            <nuxt-link to="sign-in">Sign in</nuxt-link>
+            <nuxt-link to="/signin">Sign in</nuxt-link>
             or
-            <nuxt-link to="sign-up">Sign up</nuxt-link>
+            <nuxt-link to="/signup">Sign up</nuxt-link>
             to add comments on this article.
           </p>
         </div>
@@ -62,7 +62,6 @@ export default {
     const { data } = await this.$axios.get(`https://api.realworld.io/api/articles/${this.$route.params.id}`);
     this.postData = data.article
       this.createdAt = dayjs(this.postData.createdAt).format('MMMM DD, YYYY')
-    console.log('data', this.postData);
   },
 }
 </script>
