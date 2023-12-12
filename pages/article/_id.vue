@@ -12,13 +12,13 @@
       <div class="container">
         <div class="post_contents_body">
           <p>{{postData.body}}</p>
-          <ul class="post_tag_list">
+          <ul class="flex post_tag_list">
             <li v-for="(tag, index) in postData.tagList" :key="index">
               <Tag :title="tag"/>
             </li>
           </ul>
         </div>
-        <div class="post_contents_foot">
+        <div class="flex post_contents_foot">
           <AuthorProfile
             :slug="postData.slug"
             :image="postData.author.image"

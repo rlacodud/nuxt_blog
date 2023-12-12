@@ -1,7 +1,7 @@
 <template>
   <div>
     <Banner/>
-    <div class="container main_container">
+    <div class="flex container main_container">
       <PostList/>
       <TagList/>
     </div>

@@ -1,3 +1,4 @@
+/* nav */
 .nav_wrap {
     width: 100%;
     background-color: #fff;
@@ -20,24 +21,24 @@
 .nav_list li a.nuxt-link-active {color: rgba(0, 0, 0, 0.8);}
 .nav_list li a:not(.nuxt-link-active):hover {color: rgba(0, 0, 0, 0.6);}
 
-.main_container {
-    display: flex;
+/* input */
+.input {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    width: 100%;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: var(--c-white);
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
-.main_container > div:first-child {flex: 0.75;}
-.main_container > div:last-child {flex: 0.25;}
+.input_box + .input_box {margin-top: 1rem;}
 
-.tag_container .tag_inner {
-    padding: 0.6rem;
-    background-color: #f3f3f3;
-    border-radius: 4px;
-}
+/* tag */
+.tag_container .tag_inner {padding: 0.6rem; background-color: #f3f3f3; border-radius: 4px;}
 .tag_container .title {color: #373a3c;}
 .tag_container .title + .tag_list_container {margin-top: 0.2rem;}
-.tag_list_container ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem;
-}
+.tag_list_container ul {display: flex; flex-wrap: wrap; gap: 0.2rem;}
 .tag {
     font-size: 0.8rem;
     padding: 0.1rem 0.6rem;
@@ -47,11 +48,9 @@
     border: 1px solid #ddd;
     background-color: transparent;
 }
-.tag.has_bg {
-    color: var(--c-white);
-    background-color: #818a91;
-}
+.tag.has_bg {color: var(--c-white); background-color: #818a91;}
 
+/* button */
 .button button {
     position: relative;
     display: flex;
@@ -60,6 +59,16 @@
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem;
+    background-color: transparent;
+}
+.button.btn-primary button {
+    color: var(--c-white);
+    background-color: var(--c-primary);
+}
+.button button.btn-l {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
 }
 .button.favorite_button button {
     color: var(--c-primary);
@@ -100,6 +109,7 @@
     color: var(--c-white);
 }
 
+/* user info */
 .user_info {
     display: flex;
     gap: 0.3rem;
@@ -122,6 +132,7 @@
     font-size: 0.8rem;
 }
 
+/* banner */
 .banner_container {
     display: flex;
     align-items: center;
@@ -152,83 +163,3 @@
     font-weight: 300;
 }
 .banner_container {margin-bottom: 2rem;}
-
-.tag_container,
-.post_list_container {padding: 0 1.5rem;}
-
-.post_container {
-    padding: 1.5rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.post_container .post_head + .post_body {margin-top: 1rem;}
-.post_container .post_head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.post_container .post_body h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.post_container .post_body h2 + h3 {
-    margin-top: 3px;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #999;
-    line-height: 1.3rem;
-}
-.post_container .post_foot {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-}
-.post_container .post_foot .read_more_button {
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #bbb;
-}
-.post_container .post_foot .read_more_button + a {flex: 1;}
-.post_container .post_foot .post_tag_list {display: flex; justify-content: flex-end;}
-
-.post_contents_body p {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-}
-.post_contents_body p + .post_tag_list {margin-top: 2rem;}
-.post_contents_body .post_tag_list {
-    display: flex;
-    gap: 0.3rem;
-}
-.post_contents_foot {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    position: relative;
-    display: flex;
-    gap: 3rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.post_contents_foot:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.post_contents_foot a {color: var(--c-primary)}
-
-.author_profile {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-.button_container {
-    display: flex;
-    gap: 0.3rem;
-}
