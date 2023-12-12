@@ -2,7 +2,7 @@
   <div class="container sign-in_container">
     <div class="title_container">
       <h1>Sign in</h1>
-      <nuxt-link to="/register">Need an account?</nuxt-link>
+      <nuxt-link to="/signup">Need an account?</nuxt-link>
     </div>
     <div class="input_container">
       <form>
