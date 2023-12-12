@@ -334,7 +334,5 @@ select::-ms-expand {
     --c-primary-active: #3d8b3d;
     --c-white: #fff;
 }
-.container {max-width: 1140px; margin: 0 auto;
-}
+.container {max-width: 1140px; margin: 0 auto;}
 .flex {display: flex;}
-h1 {font-size: 2.5rem;}

@@ -1,4 +1,5 @@
-.sign-in_container {max-width: 570px; text-align: center;}
+.sign_container {max-width: 570px; text-align: center;}
+.title_container h1 {font-size: 2.5rem;}
 .title_container h1 + a {display: inline-block; margin-top: 0.5rem;}
 .title_container a {color: var(--c-primary);}
 .title_container a:hover {color: var(--c-primary-active); text-decoration: underline;}
