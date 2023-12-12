@@ -1,6 +1,6 @@
 <template>
   <div class="tag" :class="{has_bg : hasBg}">
-    <nuxt-link :to="'/' + title">
+    <nuxt-link to="/">
       <span>{{title}}</span>
     </nuxt-link>
   </div>
