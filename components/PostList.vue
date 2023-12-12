@@ -15,17 +15,12 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
 import Post from "@/components/common/Post.vue";
 import Tab from "@/components/common/Tab.vue";
 
-const postList = ref(null)
-const error = ref(null)
-
-fetch('https://api.realworld.io/api/articles')
-    .then((res) => res.json())
-    .then((json) => (postList.value = json.articles))
-    .catch((err) => (error.value = err))
+defineProps({
+  postList: Array
+})
 </script>
 
 <style scoped>

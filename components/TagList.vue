@@ -19,17 +19,11 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
 import Tag from "@/components/common/Tag.vue";
 
-const tagList = ref(null)
-const error = ref(null)
-
-fetch('https://api.realworld.io/api/tags')
-    .then((res) => res.json())
-    .then((json) => (tagList.value = json.tags))
-    .catch((err) => (error.value = err))
-
+defineProps({
+  tagList: Array
+})
 </script>
 
 <style scoped>
