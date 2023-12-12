@@ -3,6 +3,7 @@
     <label :for="id" v-show="isLabel">{{label}}</label>
     <input class="input"
       :id="id"
+      :type="type"
       :placeholder="placeholder"
       :value="value"
       :readonly="readonly"
@@ -20,6 +21,11 @@ defineProps({
   isLabel: {
     type: Boolean,
     default: false
+  },
+  type: {
+    type: String,
+    required: true,
+    default: 'text'
   },
   label: String,
   placeholder: String,
