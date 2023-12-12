@@ -1,6 +1,6 @@
 <template>
   <div class="button" :class="isClass ? isClass : ''">
-    <button role="button">
+    <button role="button" :class="size ? size : ''">
       <span>{{title}}</span>
     </button>
   </div>
@@ -9,7 +9,8 @@
 <script setup>
 defineProps({
   title: String,
-  isClass: String
+  isClass: String,
+  size: String
 })
 </script>
 
