@@ -1,0 +1,80 @@
+.sign-in_container {max-width: 570px; text-align: center;}
+.title_container h1 + a {display: inline-block; margin-top: 0.5rem;}
+.title_container a {color: var(--c-primary);}
+.title_container a:hover {color: var(--c-primary-active); text-decoration: underline;}
+.title_container + .input_container {margin-top: 1rem;}
+.input_container .input_box + .button {margin-top: 1rem;}
+.input_container .button {justify-content: center;}
+
+.main_container > div:first-child {flex: 0.75;}
+.main_container > div:last-child {flex: 0.25;}
+
+.tag_container,
+.post_list_container {padding: 0 1.5rem;}
+
+.post_container {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.post_container .post_head + .post_body {margin-top: 1rem;}
+.post_container .post_head {
+    justify-content: space-between;
+    align-items: center;
+}
+.post_container .post_body h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.post_container .post_body h2 + h3 {
+    margin-top: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #999;
+    line-height: 1.3rem;
+}
+.post_container .post_foot {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.post_container .post_foot .read_more_button {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #bbb;
+}
+.post_container .post_foot .read_more_button + a {flex: 1;}
+.post_container .post_foot .post_tag_list {justify-content: flex-end;}
+
+.post_contents_body p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.post_contents_body p + .post_tag_list {margin-top: 2rem;}
+.post_contents_body .post_tag_list {gap: 0.3rem;}
+.post_contents_foot {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    position: relative;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.post_contents_foot:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.post_contents_foot a {color: var(--c-primary)}
+
+.author_profile {
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.button_container {gap: 0.3rem;}
