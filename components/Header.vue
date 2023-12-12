@@ -28,11 +28,11 @@ const navigationList = ref([
     name: "Home",
   },
   {
-    path: "/sign-in",
+    path: "/signin",
     name: "Sign in",
   },
   {
-    path: "/sign-up",
+    path: "/signup",
     name: "Sign up",
   }
 ])
