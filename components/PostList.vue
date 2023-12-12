@@ -1,5 +1,6 @@
 <template>
   <div class="post_list_container">
+    <Tab/>
     <template v-if="postList">
       <ul>
         <li v-for="(post, index) in postList" :key="index">
@@ -16,6 +17,7 @@
 <script setup>
 import {ref} from "vue";
 import Post from "@/components/common/Post.vue";
+import Tab from "@/components/common/Tab.vue";
 
 const postList = ref(null)
 const error = ref(null)
